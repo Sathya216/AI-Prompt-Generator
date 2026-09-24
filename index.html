@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Prompt Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🤖 AI Prompt Generator</h1>
+
+        <p>Create useful AI prompts easily</p>
+
+        <label>Select Purpose</label>
+
+        <select id="purpose">
+            <option value="Resume">Resume</option>
+            <option value="Interview">Interview</option>
+            <option value="Coding">Coding</option>
+            <option value="Study">Study</option>
+        </select>
+
+        <label>Enter Your Topic</label>
+
+        <input 
+            type="text" 
+            id="topic" 
+            placeholder="Example: Python"
+        >
+
+        <button onclick="generatePrompt()">
+            Generate Prompt
+        </button>
+
+        <div class="result">
+            <h3>Your AI Prompt</h3>
+
+            <p id="output">
+                Your generated prompt will appear here...
+            </p>
+
+            <button onclick="copyPrompt()">
+                📋 Copy Prompt
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
